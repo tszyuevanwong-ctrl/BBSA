@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+}
+header {
+    background-color: white;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100px
+}
+.faq1 {
+    background-color:white;
+    color:black;
+    height:30vw;
+}
+.faq1 h2 {
+    color:black;
+    font-size: 50px;
+}
+.faq1 p {
+    color:black;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.faq2 {
+    background-color:white;
+    color:black;
+    height:30vw;
+}
+.faq2 h2 {
+    color:black;
+    font-size: 50px;
+}
+.faq2 p {
+    color:black;
+    font-size: 30px;
+    margin: 20px 0;
+}
+footer {
+    background-color:white;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:40px
+}

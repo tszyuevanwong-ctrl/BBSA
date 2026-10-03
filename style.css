@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color:white;
+    height: 80px;
+    width: 100%;
+}
+h1 {
+    color: dimgray;
+    position: absolute;
+    left:10px;
+    top:0;
+    line-height: 80px;
+    background-image: url(images/BBSA.jpg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-indent: 150px;
+}
+header ul {
+    position: absolute;
+    right: 5vw;
+    top:0;
+    line-height: 80px;
+}
+header li {
+    display:inline;
+    margin-right:4vw;
+}
+header a {
+    color: dimgray;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.welcome {
+    background-color:gray;
+    height: 75vh;
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.welcome h2 {
+    color:black;
+    font-size: 80px;
+}
+.welcome p {
+    color:black;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.welcome a {
+    color:black;
+    text-decoration:none;
+    border: 1px solid #ACACAC;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.slogan {
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 40px;
+    line-height: 1.8em;
+}
+.slogan img {
+    width: 50%;
+}
+.slogan p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 50px;
+}
+.introduction {
+    background-color:black;
+    color:white;
+    height: 50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 32px;
+}
+.introduction a {
+    color:white;
+    text-decoration:none;
+}
+.introduction a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color:black;
+    color:white;
+    height: 60px;
+    display:flex;
+    justify-content:center;
+}
