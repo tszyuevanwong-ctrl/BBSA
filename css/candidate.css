@@ -1,0 +1,106 @@
+/* 选手页整体 */
+.candidate1,
+.candidate2,
+.candidate3 {
+    background-color: #f5f5f7;
+    color: #222;
+    padding: 40px 24px;
+    border-radius: 18px;
+    margin: 24px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* 选手标题 */
+.candidate1 h2,
+.candidate2 h2,
+.candidate3 h2 {
+    font-size: clamp(24px, 4vw, 36px);
+    margin-bottom: 18px;
+    color: #111;
+    font-weight: 700;
+}
+
+/* 图片容器：一行铺开，不裁切图片 */
+.candidate1img,
+.candidate2img,
+.candidate3img {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 14px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+/* 图片不裁切：保持原比例 */
+.candidate1img img,
+.candidate2img img,
+.candidate3img img {
+    flex: 1 1 0;
+    min-width: 160px;
+    width: 0;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 14px;
+    background-color: #000;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover 效果 */
+.candidate1img img:hover,
+.candidate2img img:hover,
+.candidate3img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* 选手介绍文字 */
+.candidate1 p,
+.candidate2 p,
+.candidate3 p {
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.8;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    border-left: 4px solid #ff6b35;
+}
+
+/* 更多选手区域 */
+.more {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 60px 24px;
+    border-radius: 18px;
+    margin: 24px auto;
+    max-width: 1200px;
+}
+
+.more h2 {
+    font-size: clamp(22px, 4vw, 32px);
+}
+
+/* 手机端：图片可以横向滚动，不再挤成一团 */
+@media (max-width: 768px) {
+    .candidate1img,
+    .candidate2img,
+    .candidate3img {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .candidate1img img,
+    .candidate2img img,
+    .candidate3img img {
+        flex: 0 0 auto;
+        width: 70%;
+        min-width: 240px;
+        max-width: 320px;
+    }
+}
+
